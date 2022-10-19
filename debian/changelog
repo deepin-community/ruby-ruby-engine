@@ -1,0 +1,12 @@
+ruby-ruby-engine (1.0.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Remove myself form Uploaders.
+
+ -- Christian Hofstaedtler <zeha@debian.org>  Wed, 30 Nov 2016 18:02:13 +0000
+
+ruby-ruby-engine (1.0.1-1) unstable; urgency=medium
+
+  * Initial release, dependency for ruby-rspec-pending-for.
+
+ -- Christian Hofstaedtler <zeha@debian.org>  Wed, 02 Mar 2016 15:44:29 +0100

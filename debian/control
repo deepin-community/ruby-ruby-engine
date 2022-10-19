@@ -1,0 +1,26 @@
+Source: ruby-ruby-engine
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Build-Depends: debhelper (>= 9~),
+               gem2deb,
+               rake,
+               ruby-rspec
+Standards-Version: 3.9.7
+Vcs-Git: https://anonscm.debian.org/git/pkg-ruby-extras/ruby-ruby-engine.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-ruby-extras/ruby-ruby-engine.git
+Homepage: https://github.com/janlelis/ruby_engine
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-ruby-engine
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Provides the RubyEngine constant
+ Simplifies checking for the actual ruby implementation by
+ providing the constant RubyEngine.
+ .
+ Use this if you think DRY is important.
